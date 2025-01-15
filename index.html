@@ -1,1 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🙏 Welcome to Bhaktha's blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #FFF5E1;
+        }
+
+        header {
+            background: linear-gradient(45deg, #FF9933, #CD1C1C);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        nav {
+            background: linear-gradient(45deg, #CD1C1C, #FF9933);
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #FFF5E1;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            margin-bottom: 100px; /* Added to prevent footer overlap */
+        }
+
+        .blog-post {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-top: 3px solid #FF9933;
+        }
+
+        .blog-post h2 {
+            color: #CD1C1C;
+            margin-bottom: 1rem;
+        }
+
+        .blog-post h3 {
+            color: #FF9933;
+            margin: 1rem 0;
+        }
+
+        .post-meta {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .post-content {
+            margin-bottom: 1rem;
+        }
+
+        .post-content iframe {
+            max-width: 100%;
+            margin: 1rem 0;
+        }
+
+        .read-more {
+            display: inline-block;
+            background: #FF9933;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+
+        .read-more:hover {
+            background: #CD1C1C;
+        }
+        .tip {
+            display: inline-block;
+            background: #FF9933;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 3px;
+            align-items: flex-end;
+            transition: background-color 0.3s ease;
+        }
+
+        .tip:hover {
+            background: #CD1C1C;
+        }
+
+
+        aside {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 5px;
+            border-left: 3px solid #FF9933;
+        }
+
+        aside h3 {
+            color: #CD1C1C;
+            margin-bottom: 1rem;
+        }
+
+        aside ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        aside li {
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+
+        footer {
+            background: linear-gradient(45deg, #FF9933, #CD1C1C);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        b {
+            color: #CD1C1C;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .blog-post {
+                padding: 1rem;
+            }
+
+            .post-content iframe {
+                height: 240px;
+            }
+        }
+        #search-bar {
+            margin: 1rem auto;
+            max-width: 600px;
+            display: flex;
+            gap: 0.5rem;
+        }
+        #search-input {
+            flex: 1;
+            padding: 0.5rem;
+            border: 1px solid #FF9933;
+            border-radius: 5px;
+        }
+        #search-button {
+            padding: 0.5rem 1rem;
+            background: #FF9933;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #search-button:hover {
+            background: #CD1C1C;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bhaktha's Blog</h1>
+        <p>🙏 Welcome to Adhyathmik blog 🙏</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Bhagavatha</a></li>
+            <li><a href="bhagavadgita.html">Bhagavad Gita</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="search-bar">
+        <input type="text" id="search-input" placeholder="Search blog content...">
+        <button id="search-button">Search</button>
+    </div>
+
+
+    <main>
+        <article class="blog-post">
+            <h2>What is Bhagavatha</h2>
+            <p>Bhagavata Purana, also known as Srimad Bhagavatam, is one of Hinduism's eighteen major Puranas. It is a Sanskrit text traditionally attributed to <b>Veda Vyasa</b> and primarily focuses on bhakti (devotion) towards <b>Krishna</b>.
+            </p>
+            <a href="https://kn.wikipedia.org/wiki/%E0%B2%AD%E0%B2%BE%E0%B2%97%E0%B2%B5%E0%B2%A4_%E0%B2%AA%E0%B3%81%E0%B2%B0%E0%B2%BE%E0%B2%A3" class="read-more">Read More</a>
+        </article>
+        <article class="blog-post">
+            <h2>Why Bhagavatha</h2>
+            <h3>1.Spiritual Guidance</h3>
+            <p>
+                The Bhagavata Purana emphasizes <b>Bhakti Yoga (devotional worship)</b> as the ultimate path to self-realization and <b>liberation (moksha)</b>. It inspires people to cultivate love and devotion toward Krishna or the divine.
+            </p>
+            <h3>2.Tools for Meditation and Self-Reflection </h3>
+            <p>Reciting or listening to the Bhagavata Purana is believed to purify the mind and soul, bringing clarity and focus.
+                Its hymns, prayers, and philosophical discussions are excellent tools for meditation and introspection.</p>
+            <h3>3.Promotes Universal Values</h3>
+            <p>According to the text, merely reading or hearing the Bhagavata Purana with devotion can help one attain liberation (moksha) by fostering detachment from the material world and a deeper connection with the divine.</p>
+
+            <a href="https://kn.wikipedia.org/wiki/%E0%B2%AD%E0%B2%BE%E0%B2%97%E0%B2%B5%E0%B2%A4_%E0%B2%AA%E0%B3%81%E0%B2%B0%E0%B2%BE%E0%B2%A3" class="read-more">Read More</a>
+        </article>
+        <article class="blog-post">
+            <h2>Let's Start Episode 1.</h2>
+            <div class="post-meta"> 
+                <span>Bhagavata Pravachana By Vidwan Be.Na Vijayeenndra Acharya Mysuru</span>
+            </div>
+            <div class="post-content">
+                <span>Introduction to the Bhagavata and its Importance. </span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vByPXFPrYjY?si=Pfqw2FytkJPtDpxa&amp;start=394" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <a href="https://iskcondesiretree.com/profiles/blogs/benefits-one-gets-when-reading-and-hearing-srimad-bhagavatam" class="read-more">Read More</a>
+        </article>
+
+        <article class="blog-post">
+            <h2>Episode 2.</h2>
+            <div class="post-meta"> 
+                <span>Bhagavata Pravachana By Vidwan Be.Na Vijayeenndra Acharya Mysuru</span>
+            </div>
+            <div class="post-content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nd-G3ow_Jto?si=VARjIZM9bK7-yIA9&amp;start=337" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <a href="https://iskcondesiretree.com/profiles/blogs/benefits-one-gets-when-reading-and-hearing-srimad-bhagavatam" class="read-more">Read More</a> <a href="tips.html"<button class="tip" >TipS</button>></a>
+        </article>
+        <article class="blog-post">
+            <h2>Third Blog Post</h2>
+            <div class="post-meta">
+                <span>Bhagavata Pravachana By Vidwan Be.Na Vijayeenndra Acharya Mysuru</span>
+            <div class="post-content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Le7ZKLt4dM0?si=Ui1ZpsKia8pW-ZTU&amp;start=364" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <a href="https://iskcondesiretree.com/profiles/blogs/benefits-one-gets-when-reading-and-hearing-srimad-bhagavatam" class="read-more">Read More</a>
+        </article>
+        <article class="blog-post">
+            <h2>Fourth Blog Post</h2>
+            <div class="post-meta">
+                <span>Bhagavata Pravachana By Vidwan Be.Na Vijayeenndra Acharya Mysuru</span>
+            </div>
+            <div class="post-content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1V6yJWsTsoo?si=Zd258KnaHXceCO-G&amp;start=304" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <a href="https://iskcondesiretree.com/profiles/blogs/benefits-one-gets-when-reading-and-hearing-srimad-bhagavatam" class="read-more">Read More</a>
+        </article>
+        <article class="blog-post">
+            <h2>fifth Blog Post</h2>
+            <div class="post-meta">
+                <span>Bhagavata Pravachana By Vidwan Be.Na Vijayeenndra Acharya Mysuru</span>
+            </div>
+            <div class="post-content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yy97iohbSws?si=ciLIQTKQ6XeUX3KI&amp;start=303" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <a href="https://iskcondesiretree.com/profiles/blogs/benefits-one-gets-when-reading-and-hearing-srimad-bhagavatam" class="read-more">Read More</a>
+        </article>
+        <article class="blog-post">
+            <h2>Sixth Blog Post</h2>
+            <div class="post-meta">
+                <span>Bhagavata Pravachana By Vidwan Be.Na Vijayeenndra Acharya Mysuru</span>
+            </div>
+            <div class="post-content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ziyPcTH7k1w?si=8WFGUvt2SVETs66b&amp;start=311" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <a href="https://iskcondesiretree.com/profiles/blogs/benefits-one-gets-when-reading-and-hearing-srimad-bhagavatam" class="read-more">Read More</a>
+        </article>
+        <article class="blog-post">
+            <h2>Seven Blog Post</h2>
+            <div class="post-meta">
+                <span>Bhagavata Pravachana By Vidwan Be.Na Vijayeenndra Acharya Mysuru</span>
+            </div>
+            <div class="post-content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/A7uq8UlKCL0?si=NIK3dMydTKZ-2DTq&amp;start=609" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <a href="https://iskcondesiretree.com/profiles/blogs/benefits-one-gets-when-reading-and-hearing-srimad-bhagavatam" class="read-more">Read More</a>
+        </article>
+
+        <!-- <aside>
+            <h3>Recent Posts</h3>
+            <ul>
+                <li>First Blog Post</li>
+                <li>Second Blog Post</li>
+                <li>Coming Soon...</li>
+            </ul>
+        </aside> -->
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('search-button').addEventListener('click', function() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const posts = document.querySelectorAll('.blog-post');
+
+            posts.forEach(post => {
+                const textContent = post.textContent.toLowerCase();
+                if (textContent.includes(query)) {
+                    post.classList.remove('hidden');
+                } else {
+                    post.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
