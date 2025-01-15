@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiritual Tips</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #FFF5E1;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: linear-gradient(45deg, #FF9933, #CD1C1C);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tip-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .tip-button {
+            background: #FF9933;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .tip-button:hover {
+            background: #CD1C1C;
+        }
+
+        #tipDisplay {
+            margin-top: 20px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 5px;
+            border-left: 4px solid #FF9933;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🙏 Daily Spiritual Tips 🙏</h1>
+            <p>Click on any tip to view its message</p>
+        </div>
+
+        <div class="tip-container">
+            <button class="tip-button" onclick="showTip(1)">Meditation Tip</button>
+            <button class="tip-button" onclick="showTip(2)">Prayer Tip</button>
+            <button class="tip-button" onclick="showTip(3)">Mindfulness Tip</button>
+            <button class="tip-button" onclick="showTip(4)">Bhakti Tip</button>
+            <button class="tip-button" onclick="showTip(5)">Yoga Tip</button>
+
+            <div id="tipDisplay"></div>
+        </div>
+    </div>
+
+    <script>
+        function showTip(tipNumber) {
+            const tips = {
+                1: "Meditate for at least 15 minutes daily. Start with focusing on your breath and gradually increase the duration. Remember, consistency is more important than duration.",
+                2: "Start your day with a prayer. Express gratitude for what you have and set positive intentions for the day ahead. Prayer is a powerful way to connect with the divine.",
+                3: "Practice mindfulness in daily activities. Whether eating, walking, or working, stay present in the moment. This helps develop awareness and reduces stress.",
+                4: "Chant or listen to devotional songs for at least 10 minutes daily. Bhakti (devotion) opens the heart and creates a deeper spiritual connection.",
+                5: "Include simple yoga poses in your daily routine. Even 10 minutes of stretching and breathing exercises can help balance body and mind."
+            };
+
+            const tipDisplay = document.getElementById('tipDisplay');
+            tipDisplay.style.display = 'block';
+            tipDisplay.innerHTML = tips[tipNumber];
+
+            // Add animation effect
+            tipDisplay.style.opacity = '0';
+            tipDisplay.style.transition = 'opacity 0.5s ease-in';
+            setTimeout(() => {
+                tipDisplay.style.opacity = '1';
+            }, 100);
+        }
+    </script>
+</body>
+</html>
